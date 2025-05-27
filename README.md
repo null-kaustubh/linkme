@@ -1,8 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LinkMe - Social Media Link Sharing Platform
 
-## Getting Started
+A clean, modern platform to store and share all your social media links in one beautiful place. Perfect for your bio links, social media profiles, or anywhere you need to share multiple links at once.
 
-First, run the development server:
+## ✨ Features
+
+- **Responsive Design** - Looks great on all devices
+- **Clean Interface** - Beautiful, minimalist design
+- **Easy Sharing** - One link to share all your social profiles
+- **Fast Loading** - Optimized for performance
+- **Simple Setup** - Get started in minutes
+
+## 🚀 Quick Start
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/null-kaustubh/linkme.git
+cd linkme
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+### 3. Customize Your Information
+
+#### Update User Information
+
+Edit `components/UserInfo.tsx`:
+
+```tsx
+export default function UserInfo() {
+  const name = "Your Name Here";
+  const bio = "Your bio description";
+
+  // ... rest of component
+}
+```
+
+#### Add Your Links
+
+Edit `constants/links.ts`:
+
+```tsx
+export const links = [
+  {
+    name: "GitHub",
+    url: "https://github.com/yourusername",
+  },
+  {
+    name: "LinkedIn",
+    url: "https://linkedin.com/in/yourusername",
+  },
+  {
+    name: "Twitter",
+    url: "https://twitter.com/yourusername",
+  },
+  {
+    name: "Instagram",
+    url: "https://instagram.com/yourusername",
+  },
+  {
+    name: "Website",
+    url: "https://yourwebsite.com",
+  },
+  // Add more links as needed...
+];
+```
+
+### 4. Run the Development Server
 
 ```bash
 npm run dev
@@ -10,27 +82,40 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see your link page.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📱 Responsive Design
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The template is fully responsive and works great on:
 
-## Learn More
+- **Mobile phones** - Full width layout
+- **Tablets** - Full width layout
+- **Laptops & Desktops** - Centered layout with proper spacing
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Built With
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Next.js** - React framework for production
+- **Tailwind CSS** - Utility-first CSS framework
+- **TypeScript** - Type-safe JavaScript
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Deployment
 
-## Deploy on Vercel
+### Deploy on Vercel (Recommended)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Push your code to GitHub
+2. Connect your repository to [Vercel](https://vercel.com)
+3. Deploy automatically with every push
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Deploy on Netlify
+
+1. Build the project: `npm run build`
+2. Upload the `out` folder to Netlify
+3. Or connect your GitHub repository for automatic deployments
+
+---
+
+**Made with ❤️ by [Kaustubh](https://github.com/null-kaustubh)**
+
+_Don't forget to star ⭐ this repository if you found it helpful!_
