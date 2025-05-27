@@ -13,10 +13,21 @@
   --font-brico: var(--font-brico);
 }
 
+::selection {
+  background-color: #007595; /* purple-500 */
+  color: #cefafe;
+}
+
+::-moz-selection {
+  background-color: #007595;
+  color: #cefafe;
+}
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #fdf9f0;
   }
 }
 

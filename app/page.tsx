@@ -1,4 +1,5 @@
 import Content from "@/components/Content";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import UserInfo from "@/components/UserInfo";
 
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <UserInfo />
       <Content />
+      <Footer />
     </div>
   );
 }
